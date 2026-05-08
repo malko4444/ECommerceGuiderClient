@@ -25,6 +25,7 @@ export default function Signup() {
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
   const [showPassword, setShowPassword] = useState(false);
+  const baseURL = process.env.NEXT_PUBLIC_API_BASE_URL;
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -48,7 +49,7 @@ export default function Signup() {
     setSuccess('');
 
     try {
-      const res = await fetch('http://localhost:4000/auth/otpGenerate', {
+      const res = await fetch(`${baseURL}/auth/otpGenerate`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email }),
@@ -86,7 +87,7 @@ export default function Signup() {
     setSuccess('');
 
     try {
-      const res = await fetch('http://localhost:4000/auth/signup', {
+      const res = await fetch(`${baseURL}/auth/signup`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ ...savedData, otp: formData.otp }),

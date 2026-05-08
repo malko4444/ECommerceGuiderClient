@@ -23,7 +23,7 @@ export default function Login() {
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
 
-  const baseURL = 'http://localhost:4000/auth/login';
+  const baseURL = process.env.NEXT_PUBLIC_API_BASE_URL + 'auth/login';
 
   const loginUser = async () => {
     if (!email || !password) {

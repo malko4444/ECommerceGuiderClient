@@ -11,6 +11,7 @@ function ProfilePage() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   const [showLogoutConfirm, setShowLogoutConfirm] = useState(false);
+  const baseURL = process.env.NEXT_PUBLIC_API_BASE_URL; 
 
   const fetchProfile = async () => {
     try {
@@ -23,7 +24,7 @@ function ProfilePage() {
         return;
       }
 
-      const res = await fetch("http://localhost:4000/auth/profile", {
+      const res = await fetch(`${baseURL}/auth/profile`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
