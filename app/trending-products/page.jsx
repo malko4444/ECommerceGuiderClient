@@ -1,6 +1,6 @@
 import React from 'react'
 
-import TrendingProducts from '../component/trendingProducts'
+import TrendingProducts from '../component/TrendingProducts'
 
 
 function page() {
