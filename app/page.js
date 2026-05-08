@@ -14,36 +14,36 @@ import {
 // DATA
 // ════════════════════════════════════════
 const TOOLS = [
-  { title: 'Startup Roadmap',   desc: 'Phase-by-phase launch plan tailored to your product',    icon: <FaRoad />,            tone: 'teal' },
-  { title: 'Budget Planner',    desc: 'Smart PKR allocation across stock, ads, and logistics',  icon: <FaMoneyBillWave />,   tone: 'emerald' },
-  { title: 'Trending Products', desc: "See what's selling right now in your category",          icon: <FaFire />,            tone: 'orange' },
-  { title: 'Competitor Scan',   desc: 'Real stores, their pricing, and positioning',            icon: <FaChartLine />,       tone: 'purple' },
-  { title: 'Profit Calculator', desc: 'Margins, ROI, break-even — instant math before you sell',icon: <FaCalculator />,      tone: 'sky' },
-  { title: 'Vendor Directory',  desc: 'Trusted suppliers and wholesalers across Pakistan',      icon: <FaStore />,           tone: 'pink' },
-  { title: 'Platform Advisor',  desc: 'Find the best channel for your goal',                    icon: <FaLightbulb />,       tone: 'amber' },
-  { title: 'Launch Guide',      desc: 'Step-by-step setup for Daraz, Shopify, Instagram & more',icon: <FaRocket />,          tone: 'indigo' },
-  { title: 'Learning Center',   desc: 'Tutorials on ads, SEO, packaging, customer service',     icon: <FaChalkboardTeacher />, tone: 'rose' },
+  { title: 'Startup Roadmap', desc: 'Phase-by-phase launch plan tailored to your product', icon: <FaRoad />, tone: 'teal' },
+  { title: 'Budget Planner', desc: 'Smart PKR allocation across stock, ads, and logistics', icon: <FaMoneyBillWave />, tone: 'emerald' },
+  { title: 'Trending Products', desc: "See what's selling right now in your category", icon: <FaFire />, tone: 'orange' },
+  { title: 'Competitor Scan', desc: 'Real stores, their pricing, and positioning', icon: <FaChartLine />, tone: 'purple' },
+  { title: 'Profit Calculator', desc: 'Margins, ROI, break-even — instant math before you sell', icon: <FaCalculator />, tone: 'sky' },
+  { title: 'Vendor Directory', desc: 'Trusted suppliers and wholesalers across Pakistan', icon: <FaStore />, tone: 'pink' },
+  { title: 'Platform Advisor', desc: 'Find the best channel for your goal', icon: <FaLightbulb />, tone: 'amber' },
+  { title: 'Launch Guide', desc: 'Step-by-step setup for Daraz, Shopify, Instagram & more', icon: <FaRocket />, tone: 'indigo' },
+  { title: 'Learning Center', desc: 'Tutorials on ads, SEO, packaging, customer service', icon: <FaChalkboardTeacher />, tone: 'rose' },
 ];
 
 const TONE_STYLES = {
-  teal:    'bg-teal-50    text-teal-600',
+  teal: 'bg-teal-50    text-teal-600',
   emerald: 'bg-emerald-50 text-emerald-600',
-  orange:  'bg-orange-50  text-orange-600',
-  purple:  'bg-purple-50  text-purple-600',
-  sky:     'bg-sky-50     text-sky-600',
-  pink:    'bg-pink-50    text-pink-600',
-  amber:   'bg-amber-50   text-amber-600',
-  indigo:  'bg-indigo-50  text-indigo-600',
-  rose:    'bg-rose-50    text-rose-600',
+  orange: 'bg-orange-50  text-orange-600',
+  purple: 'bg-purple-50  text-purple-600',
+  sky: 'bg-sky-50     text-sky-600',
+  pink: 'bg-pink-50    text-pink-600',
+  amber: 'bg-amber-50   text-amber-600',
+  indigo: 'bg-indigo-50  text-indigo-600',
+  rose: 'bg-rose-50    text-rose-600',
 };
 
 const PLATFORMS = [
-  { name: 'Daraz',     icon: <FaStore />,     color: 'text-orange-600' },
-  { name: 'Shopify',   icon: <FaShopify />,   color: 'text-emerald-600' },
+  { name: 'Daraz', icon: <FaStore />, color: 'text-orange-600' },
+  { name: 'Shopify', icon: <FaShopify />, color: 'text-emerald-600' },
   { name: 'Instagram', icon: <FaInstagram />, color: 'text-pink-600' },
-  { name: 'Facebook',  icon: <FaFacebookF />, color: 'text-blue-600' },
-  { name: 'TikTok',    icon: <FaTiktok />,    color: 'text-slate-900' },
-  { name: 'WhatsApp',  icon: <FaWhatsapp />,  color: 'text-green-600' },
+  { name: 'Facebook', icon: <FaFacebookF />, color: 'text-blue-600' },
+  { name: 'TikTok', icon: <FaTiktok />, color: 'text-slate-900' },
+  { name: 'WhatsApp', icon: <FaWhatsapp />, color: 'text-green-600' },
 ];
 
 // ════════════════════════════════════════
@@ -66,11 +66,11 @@ export default function LandingPage() {
             </div>
           </div>
           <div className="flex items-center gap-2">
-            <Link to="/pricing">
+            {/* <Link to="/pricing">
               <button className="hidden sm:inline-flex text-slate-700 hover:text-teal-700 font-semibold px-3 sm:px-4 py-2 text-sm transition">
                 Pricing
               </button>
-            </Link>
+            </Link> */}
             <Link to="/login">
               <button className="text-slate-700 hover:text-teal-700 font-semibold px-3 sm:px-4 py-2 text-sm transition">
                 Login
@@ -267,8 +267,8 @@ export default function LandingPage() {
           <div className="grid md:grid-cols-3 gap-6">
             {[
               { step: '01', title: 'Tell us your idea', desc: 'Describe what you want to sell — clothing, electronics, anything.' },
-              { step: '02', title: 'Get your plan',      desc: 'Personalized roadmap, budget, and platform advice in seconds.' },
-              { step: '03', title: 'Launch & grow',      desc: 'Follow step-by-step checklists and track your profit as you scale.' },
+              { step: '02', title: 'Get your plan', desc: 'Personalized roadmap, budget, and platform advice in seconds.' },
+              { step: '03', title: 'Launch & grow', desc: 'Follow step-by-step checklists and track your profit as you scale.' },
             ].map((s, i) => (
               <div key={s.step} className="relative">
                 <div className="bg-white rounded-2xl border border-slate-100 p-6 shadow-sm h-full">
@@ -305,138 +305,7 @@ export default function LandingPage() {
       </section>
 
       {/* ═══ PRICING SECTION ═══ */}
-      <section className="bg-gradient-to-br from-slate-50 via-white to-teal-50/40 py-16 sm:py-24 border-y border-slate-100">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 bg-teal-50 text-teal-700 px-3 py-1 rounded-full text-xs font-semibold mb-3">
-              <FaBolt size={10} /> Simple, transparent pricing
-            </div>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight">
-              Plans that grow <span className="text-teal-700 italic">with you.</span>
-            </h2>
-            <p className="text-slate-500 mt-4 max-w-xl mx-auto">
-              Start free. Upgrade only when your sales need more horsepower. No card required to begin.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-5 lg:gap-6">
-
-            {/* STARTER */}
-            <div className="bg-white rounded-3xl border border-slate-100 shadow-sm hover:shadow-lg transition flex flex-col">
-              <div className="p-7 pb-5">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="w-11 h-11 rounded-xl bg-slate-50 text-slate-600 flex items-center justify-center text-lg">
-                    <FaSeedling />
-                  </div>
-                  <div>
-                    <p className="font-extrabold text-slate-900 text-lg leading-tight">Starter</p>
-                    <p className="text-xs text-slate-500">Try the platform — no card needed</p>
-                  </div>
-                </div>
-                <p className="text-5xl font-black text-slate-900 tracking-tight mt-5">Free</p>
-                <p className="text-xs text-slate-400 mt-1">Forever</p>
-                <Link to="/signup">
-                  <button className="mt-5 w-full bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 font-bold px-5 py-3 rounded-xl text-sm shadow-sm transition flex items-center justify-center gap-2">
-                    Start free <FaArrowRight size={11} />
-                  </button>
-                </Link>
-              </div>
-              <div className="border-t border-slate-100 p-7 pt-5 flex-1">
-                <ul className="space-y-2.5 text-sm">
-                  <li className="flex items-start gap-2.5"><FaCheckCircle className="text-teal-500 shrink-0 mt-0.5" size={13} /><span className="text-slate-700">5 AI tool runs / month</span></li>
-                  <li className="flex items-start gap-2.5"><FaCheckCircle className="text-teal-500 shrink-0 mt-0.5" size={13} /><span className="text-slate-700">Browse vendor directory</span></li>
-                  <li className="flex items-start gap-2.5"><FaCheckCircle className="text-teal-500 shrink-0 mt-0.5" size={13} /><span className="text-slate-700">5 saved vendors with notes</span></li>
-                  <li className="flex items-start gap-2.5"><FaCheckCircle className="text-teal-500 shrink-0 mt-0.5" size={13} /><span className="text-slate-700">2 vendor inquiries / month</span></li>
-                  <li className="flex items-start gap-2.5"><FaCheckCircle className="text-teal-500 shrink-0 mt-0.5" size={13} /><span className="text-slate-700">Read all reviews</span></li>
-                </ul>
-              </div>
-            </div>
-
-            {/* PRO — featured */}
-            <div className="relative bg-white rounded-3xl border border-slate-100 ring-2 ring-teal-500 shadow-lg shadow-teal-500/15 flex flex-col">
-              <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                <span className="bg-gradient-to-r from-teal-500 to-emerald-500 text-white text-[11px] font-bold uppercase tracking-wider px-4 py-1.5 rounded-full shadow-md shadow-teal-500/40">
-                  Most Popular
-                </span>
-              </div>
-              <div className="p-7 pb-5">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="w-11 h-11 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center text-lg">
-                    <FaRocket />
-                  </div>
-                  <div>
-                    <p className="font-extrabold text-slate-900 text-lg leading-tight">Pro</p>
-                    <p className="text-xs text-slate-500">For sellers shipping every week</p>
-                  </div>
-                </div>
-                <div className="flex items-baseline gap-1.5 flex-wrap mt-5">
-                  <span className="text-[15px] font-bold text-slate-400">PKR</span>
-                  <span className="text-5xl font-black text-slate-900 tracking-tight">1,499</span>
-                  <span className="text-sm font-semibold text-slate-500">/ month</span>
-                </div>
-                <p className="text-xs text-slate-400 mt-1">Or PKR 1,249/mo billed yearly</p>
-                <Link to="/signup">
-                  <button className="mt-5 w-full bg-teal-600 hover:bg-teal-700 text-white font-bold px-5 py-3 rounded-xl text-sm shadow-md shadow-teal-600/30 transition flex items-center justify-center gap-2">
-                    Go Pro <FaArrowRight size={11} />
-                  </button>
-                </Link>
-              </div>
-              <div className="border-t border-slate-100 p-7 pt-5 flex-1">
-                <ul className="space-y-2.5 text-sm">
-                  <li className="flex items-start gap-2.5"><FaCheckCircle className="text-teal-500 shrink-0 mt-0.5" size={13} /><span className="text-slate-700"><b>100 AI tool runs</b> / month</span></li>
-                  <li className="flex items-start gap-2.5"><FaCheckCircle className="text-teal-500 shrink-0 mt-0.5" size={13} /><span className="text-slate-700"><b>15 AI Matchmaker</b> searches / mo</span></li>
-                  <li className="flex items-start gap-2.5"><FaCheckCircle className="text-teal-500 shrink-0 mt-0.5" size={13} /><span className="text-slate-700">Unlimited saved vendors + notes</span></li>
-                  <li className="flex items-start gap-2.5"><FaCheckCircle className="text-teal-500 shrink-0 mt-0.5" size={13} /><span className="text-slate-700">30 inquiries / month</span></li>
-                  <li className="flex items-start gap-2.5"><FaCheckCircle className="text-teal-500 shrink-0 mt-0.5" size={13} /><span className="text-slate-700">Write reviews + email support</span></li>
-                </ul>
-              </div>
-            </div>
-
-            {/* BUSINESS */}
-            <div className="bg-white rounded-3xl border border-slate-100 shadow-sm hover:shadow-lg transition flex flex-col">
-              <div className="p-7 pb-5">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="w-11 h-11 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center text-lg">
-                    <FaCrown />
-                  </div>
-                  <div>
-                    <p className="font-extrabold text-slate-900 text-lg leading-tight">Business</p>
-                    <p className="text-xs text-slate-500">For agencies and power users</p>
-                  </div>
-                </div>
-                <div className="flex items-baseline gap-1.5 flex-wrap mt-5">
-                  <span className="text-[15px] font-bold text-slate-400">PKR</span>
-                  <span className="text-5xl font-black text-slate-900 tracking-tight">4,999</span>
-                  <span className="text-sm font-semibold text-slate-500">/ month</span>
-                </div>
-                <p className="text-xs text-slate-400 mt-1">Or PKR 4,166/mo billed yearly</p>
-                <Link to="/signup">
-                  <button className="mt-5 w-full bg-slate-900 hover:bg-slate-800 text-white font-bold px-5 py-3 rounded-xl text-sm shadow-md transition flex items-center justify-center gap-2">
-                    Contact sales <FaArrowRight size={11} />
-                  </button>
-                </Link>
-              </div>
-              <div className="border-t border-slate-100 p-7 pt-5 flex-1">
-                <ul className="space-y-2.5 text-sm">
-                  <li className="flex items-start gap-2.5"><FaCheckCircle className="text-teal-500 shrink-0 mt-0.5" size={13} /><span className="text-slate-700"><b>Unlimited</b> AI tool runs</span></li>
-                  <li className="flex items-start gap-2.5"><FaCheckCircle className="text-teal-500 shrink-0 mt-0.5" size={13} /><span className="text-slate-700"><b>Unlimited</b> matchmaker + inquiries</span></li>
-                  <li className="flex items-start gap-2.5"><FaCheckCircle className="text-teal-500 shrink-0 mt-0.5" size={13} /><span className="text-slate-700">5 team seats included</span></li>
-                  <li className="flex items-start gap-2.5"><FaCheckCircle className="text-teal-500 shrink-0 mt-0.5" size={13} /><span className="text-slate-700">Excel / CSV export</span></li>
-                  <li className="flex items-start gap-2.5"><FaCheckCircle className="text-teal-500 shrink-0 mt-0.5" size={13} /><span className="text-slate-700">Priority support (24h)</span></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div className="text-center mt-8">
-            <Link to="/pricing">
-              <button className="inline-flex items-center gap-2 text-teal-700 hover:text-teal-800 font-bold text-sm transition">
-                See full feature comparison <FaArrowRight size={11} />
-              </button>
-            </Link>
-          </div>
-        </div>
-      </section>
+     
 
       {/* ═══ FINAL CTA ═══ */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 pb-16 sm:pb-24">
@@ -492,3 +361,138 @@ export default function LandingPage() {
     </div>
   );
 }
+
+
+
+//  <section className="bg-gradient-to-br from-slate-50 via-white to-teal-50/40 py-16 sm:py-24 border-y border-slate-100">
+//         <div className="max-w-6xl mx-auto px-4 sm:px-6">
+//           <div className="text-center mb-12">
+//             <div className="inline-flex items-center gap-2 bg-teal-50 text-teal-700 px-3 py-1 rounded-full text-xs font-semibold mb-3">
+//               <FaBolt size={10} /> Simple, transparent pricing
+//             </div>
+//             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight">
+//               Plans that grow <span className="text-teal-700 italic">with you.</span>
+//             </h2>
+//             <p className="text-slate-500 mt-4 max-w-xl mx-auto">
+//               Start free. Upgrade only when your sales need more horsepower. No card required to begin.
+//             </p>
+//           </div>
+
+//           <div className="grid md:grid-cols-3 gap-5 lg:gap-6">
+
+//             {/* STARTER */}
+//             <div className="bg-white rounded-3xl border border-slate-100 shadow-sm hover:shadow-lg transition flex flex-col">
+//               <div className="p-7 pb-5">
+//                 <div className="flex items-center gap-3 mb-3">
+//                   <div className="w-11 h-11 rounded-xl bg-slate-50 text-slate-600 flex items-center justify-center text-lg">
+//                     <FaSeedling />
+//                   </div>
+//                   <div>
+//                     <p className="font-extrabold text-slate-900 text-lg leading-tight">Starter</p>
+//                     <p className="text-xs text-slate-500">Try the platform — no card needed</p>
+//                   </div>
+//                 </div>
+//                 <p className="text-5xl font-black text-slate-900 tracking-tight mt-5">Free</p>
+//                 <p className="text-xs text-slate-400 mt-1">Forever</p>
+//                 <Link to="/signup">
+//                   <button className="mt-5 w-full bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 font-bold px-5 py-3 rounded-xl text-sm shadow-sm transition flex items-center justify-center gap-2">
+//                     Start free <FaArrowRight size={11} />
+//                   </button>
+//                 </Link>
+//               </div>
+//               <div className="border-t border-slate-100 p-7 pt-5 flex-1">
+//                 <ul className="space-y-2.5 text-sm">
+//                   <li className="flex items-start gap-2.5"><FaCheckCircle className="text-teal-500 shrink-0 mt-0.5" size={13} /><span className="text-slate-700">5 AI tool runs / month</span></li>
+//                   <li className="flex items-start gap-2.5"><FaCheckCircle className="text-teal-500 shrink-0 mt-0.5" size={13} /><span className="text-slate-700">Browse vendor directory</span></li>
+//                   <li className="flex items-start gap-2.5"><FaCheckCircle className="text-teal-500 shrink-0 mt-0.5" size={13} /><span className="text-slate-700">5 saved vendors with notes</span></li>
+//                   <li className="flex items-start gap-2.5"><FaCheckCircle className="text-teal-500 shrink-0 mt-0.5" size={13} /><span className="text-slate-700">2 vendor inquiries / month</span></li>
+//                   <li className="flex items-start gap-2.5"><FaCheckCircle className="text-teal-500 shrink-0 mt-0.5" size={13} /><span className="text-slate-700">Read all reviews</span></li>
+//                 </ul>
+//               </div>
+//             </div>
+
+//             {/* PRO — featured */}
+//             <div className="relative bg-white rounded-3xl border border-slate-100 ring-2 ring-teal-500 shadow-lg shadow-teal-500/15 flex flex-col">
+//               <div className="absolute -top-3 left-1/2 -translate-x-1/2">
+//                 <span className="bg-gradient-to-r from-teal-500 to-emerald-500 text-white text-[11px] font-bold uppercase tracking-wider px-4 py-1.5 rounded-full shadow-md shadow-teal-500/40">
+//                   Most Popular
+//                 </span>
+//               </div>
+//               <div className="p-7 pb-5">
+//                 <div className="flex items-center gap-3 mb-3">
+//                   <div className="w-11 h-11 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center text-lg">
+//                     <FaRocket />
+//                   </div>
+//                   <div>
+//                     <p className="font-extrabold text-slate-900 text-lg leading-tight">Pro</p>
+//                     <p className="text-xs text-slate-500">For sellers shipping every week</p>
+//                   </div>
+//                 </div>
+//                 <div className="flex items-baseline gap-1.5 flex-wrap mt-5">
+//                   <span className="text-[15px] font-bold text-slate-400">PKR</span>
+//                   <span className="text-5xl font-black text-slate-900 tracking-tight">1,499</span>
+//                   <span className="text-sm font-semibold text-slate-500">/ month</span>
+//                 </div>
+//                 <p className="text-xs text-slate-400 mt-1">Or PKR 1,249/mo billed yearly</p>
+//                 <Link to="/signup">
+//                   <button className="mt-5 w-full bg-teal-600 hover:bg-teal-700 text-white font-bold px-5 py-3 rounded-xl text-sm shadow-md shadow-teal-600/30 transition flex items-center justify-center gap-2">
+//                     Go Pro <FaArrowRight size={11} />
+//                   </button>
+//                 </Link>
+//               </div>
+//               <div className="border-t border-slate-100 p-7 pt-5 flex-1">
+//                 <ul className="space-y-2.5 text-sm">
+//                   <li className="flex items-start gap-2.5"><FaCheckCircle className="text-teal-500 shrink-0 mt-0.5" size={13} /><span className="text-slate-700"><b>100 AI tool runs</b> / month</span></li>
+//                   <li className="flex items-start gap-2.5"><FaCheckCircle className="text-teal-500 shrink-0 mt-0.5" size={13} /><span className="text-slate-700"><b>15 AI Matchmaker</b> searches / mo</span></li>
+//                   <li className="flex items-start gap-2.5"><FaCheckCircle className="text-teal-500 shrink-0 mt-0.5" size={13} /><span className="text-slate-700">Unlimited saved vendors + notes</span></li>
+//                   <li className="flex items-start gap-2.5"><FaCheckCircle className="text-teal-500 shrink-0 mt-0.5" size={13} /><span className="text-slate-700">30 inquiries / month</span></li>
+//                   <li className="flex items-start gap-2.5"><FaCheckCircle className="text-teal-500 shrink-0 mt-0.5" size={13} /><span className="text-slate-700">Write reviews + email support</span></li>
+//                 </ul>
+//               </div>
+//             </div>
+
+//             {/* BUSINESS */}
+//             <div className="bg-white rounded-3xl border border-slate-100 shadow-sm hover:shadow-lg transition flex flex-col">
+//               <div className="p-7 pb-5">
+//                 <div className="flex items-center gap-3 mb-3">
+//                   <div className="w-11 h-11 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center text-lg">
+//                     <FaCrown />
+//                   </div>
+//                   <div>
+//                     <p className="font-extrabold text-slate-900 text-lg leading-tight">Business</p>
+//                     <p className="text-xs text-slate-500">For agencies and power users</p>
+//                   </div>
+//                 </div>
+//                 <div className="flex items-baseline gap-1.5 flex-wrap mt-5">
+//                   <span className="text-[15px] font-bold text-slate-400">PKR</span>
+//                   <span className="text-5xl font-black text-slate-900 tracking-tight">4,999</span>
+//                   <span className="text-sm font-semibold text-slate-500">/ month</span>
+//                 </div>
+//                 <p className="text-xs text-slate-400 mt-1">Or PKR 4,166/mo billed yearly</p>
+//                 <Link to="/signup">
+//                   <button className="mt-5 w-full bg-slate-900 hover:bg-slate-800 text-white font-bold px-5 py-3 rounded-xl text-sm shadow-md transition flex items-center justify-center gap-2">
+//                     Contact sales <FaArrowRight size={11} />
+//                   </button>
+//                 </Link>
+//               </div>
+//               <div className="border-t border-slate-100 p-7 pt-5 flex-1">
+//                 <ul className="space-y-2.5 text-sm">
+//                   <li className="flex items-start gap-2.5"><FaCheckCircle className="text-teal-500 shrink-0 mt-0.5" size={13} /><span className="text-slate-700"><b>Unlimited</b> AI tool runs</span></li>
+//                   <li className="flex items-start gap-2.5"><FaCheckCircle className="text-teal-500 shrink-0 mt-0.5" size={13} /><span className="text-slate-700"><b>Unlimited</b> matchmaker + inquiries</span></li>
+//                   <li className="flex items-start gap-2.5"><FaCheckCircle className="text-teal-500 shrink-0 mt-0.5" size={13} /><span className="text-slate-700">5 team seats included</span></li>
+//                   <li className="flex items-start gap-2.5"><FaCheckCircle className="text-teal-500 shrink-0 mt-0.5" size={13} /><span className="text-slate-700">Excel / CSV export</span></li>
+//                   <li className="flex items-start gap-2.5"><FaCheckCircle className="text-teal-500 shrink-0 mt-0.5" size={13} /><span className="text-slate-700">Priority support (24h)</span></li>
+//                 </ul>
+//               </div>
+//             </div>
+//           </div>
+
+//           <div className="text-center mt-8">
+//             <Link to="/pricing">
+//               <button className="inline-flex items-center gap-2 text-teal-700 hover:text-teal-800 font-bold text-sm transition">
+//                 See full feature comparison <FaArrowRight size={11} />
+//               </button>
+//             </Link>
+//           </div>
+//         </div>
+//       </section>
